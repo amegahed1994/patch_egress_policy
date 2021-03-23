@@ -1,0 +1,10 @@
+- egressTo:
+    operations:
+      - serviceName: bigquery.googleapis.com
+        methodSelectors:
+        - method: "*"
+    resources:
+      - projects/{DEST_PROJECT_NUMBER} # destination project number
+  egressFrom:
+    identities:
+    - user:{EMAIL} # email of user to whitelist for egress
