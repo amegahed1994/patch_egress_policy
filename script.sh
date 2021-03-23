@@ -1,4 +1,4 @@
-gcloud beta access-context-manager perimeters update my_access_level \
+gcloud beta access-context-manager perimeters update {PERIMETER_NAME} \
 --set-egress-policies=egress_policies.yaml \
---policy=212996153568
+--policy={POLICY_NAME}
 
